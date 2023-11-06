@@ -38,7 +38,7 @@ def writeToFile(path, text):
         file.write(text)
 
 
-if __name__ == '__main__':
+def console():
     while True:
         command = input("\nEnter 'encrypt' to encrypt a file, 'decrypt' to decrypt a file or 'exit' to quit: ").strip().lower()
 
@@ -58,3 +58,7 @@ if __name__ == '__main__':
 
         writeToFile(writeFile, result)
         print(f"The text has been successfully {command}ed and added in {writeFile}.")
+
+
+if __name__ == '__main__':
+    console()
